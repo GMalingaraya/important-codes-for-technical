@@ -1,0 +1,776 @@
+import java.awt.*;
+import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Scanner;
+
+
+  //1]
+  public class Main {
+     public static void main(String[] args) {
+     /*   int[] x = {1,2,2,1};
+        int target = 3;
+
+        int i;
+        for (i = 0; i < 3; i++)
+            for (int j=0;j<3;j++)
+
+                if (target == x[i] + x[j + 1]) {
+                    System.out.print(i+ " ");
+                    System.out.print(j + 1+"   ");
+                }
+        System.out.println(); */
+
+
+
+
+        //2]
+        /*int[] nums= {5,4,3,2,1};
+        for (int i=0;i<nums.length;i++){
+            for (int j=0;j<nums.length-1-i;j++){
+                if (nums[j]>nums[j+1]){
+                    int temp=nums[j];
+                    nums[j]=nums[j+1];
+                    nums[j+1]=temp;
+                }
+            }
+        }
+        for (int i=0;i<nums.length;i++)
+            System.out.println(nums[i]);*/
+
+
+
+        //3]
+        /*Scanner sc=new Scanner (System.in);
+        System.out.println("enter two numberss");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println("before swapping the values"+" "+a+" "+b);
+        if(a!=b){
+            int temp=a;
+            a=b;
+            b=temp;
+        }
+        System.out.println("after swapping the values"+" "+a+" "+b);*/
+
+
+
+         //4]
+         //greatest of two numbers
+        /*Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        if (a>b){
+            System.out.println("the greater number is"+a);
+            }else {
+            System.out.println("the gretest number is"+ b);
+        }*/
+
+
+        
+        // 5]
+        //Even or odd Number
+        /*Scanner sc=new Scanner (System.in);
+        System.out.println("enter the number to check even or not");
+        int x=sc.nextInt();
+        if(x%2==0){
+            System.out.println(x+" even number");
+        } else {
+            System.out.println(x+" is odd number");
+        }*/
+
+
+
+
+         // 6]
+         //palindrome program
+        /*Scanner sc=new Scanner (System.in);
+        int t,rem,r=0;
+        System.out.println("enter the number to check palindrome or not");
+        int n=sc.nextInt();
+        t=n;
+        while (t>0){
+            rem=t%10;
+            r=r*10+rem;
+            t=t/10;
+        }
+        System.out.println("reverse of the you entered number is"+r);
+        if(n==r){
+            System.out.println(r+ " is palindrome");
+        }else {
+            System.out.println(r+" is not palindrome");
+        }*/
+
+
+
+         // 7]
+         //string palindrome
+        /*Scanner sc=new Scanner(System.in);
+        String mg=sc.next();
+        boolean isPalindrome = true;
+        for (int i=0,j=mg.length()-1;i<j;i++,j--){
+            if(mg.charAt(i)==mg.charAt(j))
+                continue;
+            isPalindrome=false;
+            break;
+        }
+        System.out.println(isPalindrome ? "palindrome":"not palindrome");*/
+
+
+
+
+          // 8] 
+         //gretest of two number
+        /*Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println(a>b? a : b);*/
+
+
+
+
+         // 9]
+         //reverse of number
+        /*Scanner sc=new Scanner(System.in);
+        System.out.println(" enter the number");
+        int n=sc.nextInt();
+        int rem,r=0;
+        int t=n;
+        while (t>0) {
+            rem=t%10;
+            r=r*10+rem;
+             t=t/10;
+        }
+        System.out.println("reverse of the number is"+ " "+" "+r);*/
+
+
+  
+      
+         // 10]
+         //armstrong number
+        /*Scanner sc=new Scanner(System.in);
+        int rem;
+        int sum=0;
+        int n=sc.nextInt();
+        int number=n;
+        while(number>0){
+            rem=number%10;
+            sum= sum+(rem*rem*rem);
+            number=number/10;
+        }
+        System.out.println(sum);
+        if (n==sum){
+            System.out.println("armstrong number");
+        }else {
+            System.out.println("not an armstrong number");
+        }*/
+
+
+
+
+         // 11]
+         //sum of numbers under the range 10.
+        /*Scanner sc=new Scanner(System.in);
+        int sum=0;
+        int n=0;
+        while(n<10){
+            n=sc.nextInt();
+            sum=sum+n;
+        }
+        System.out.println(sum);*/
+
+
+
+        // 12]
+        //sum of even numbers
+        /*Scanner sc=new Scanner(System.in);
+        int sum=0;
+        int n=sc.nextInt();
+        for (int i=0;i<=n;i++){
+            if(i%2==0){
+                sum=sum+i;
+            }
+        }
+        System.out.println(sum);*/
+
+
+
+         // 13]
+         // sum of odd numbers
+        /*Scanner sc=new Scanner (System.in);
+        int sum=0;
+        int n=sc.nextInt();
+        for (int i=0;i<=n;i++){
+            if(i%2==1){
+                sum=sum+i;
+            }
+        }
+        System.out.println("sum of odd numbers is"+ " " +sum);*/
+
+
+
+      
+         // 14]
+         //prime numbers
+        /*int i,count;
+        System.out.print("Enter n value : ");
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        System.out.println("Prime numbers between 1 to "+n+" are ");
+        for(int j=2;j<=n;j++)
+        {
+            count=0;
+            for(i=1;i<=j;i++)
+            {
+                if(j%i==0)
+                {
+                    count++;
+                }
+            }
+            if(count==2)
+                System.out.print(j+"  ");
+        }*/
+
+
+
+ 
+         // 15]
+         //prime numbers
+        /*Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int count=0;
+        if(n==0||n==1){
+            System.out.println("not a prime number");
+        }else {
+            for (int i=2;i<=n;i++)
+                if(n%i==0){
+                    count++;
+                }
+        }
+        if(count==1){
+            System.out.println("the given number is prime number");
+        }else {
+            System.out.println("not a prime number");
+        }*/
+
+
+
+        // 16]
+        //anagram of two strings
+         /*Scanner sc = new Scanner(System.in);
+         String str1 = sc.next();
+         String str2 = sc.next();
+
+         if (str1.length() == str2.length()) {
+             str1 = str1.toLowerCase();
+             str2 = str2.toLowerCase();
+             str1 = str1.replace("", "");
+             str2 = str2.replace("", "");
+
+             char a[] = str1.toCharArray();
+             char b[] = str2.toCharArray();
+
+             Arrays.sort(a);
+             Arrays.sort(b);
+
+             boolean result = Arrays.equals(a, b);
+
+             if (result) {
+                 System.out.println("strings are anagrams ");
+             } else {
+                 System.out.println("they are not anagrams");
+             }
+         }
+         else{
+                 System.out.println("they are not anagrams");
+             }*/
+
+
+
+
+      // 17]
+     /*Scanner sc=new Scanner(System.in);
+     int n1=0;
+     int n2=1;
+     int sum=0;
+     int n=sc.nextInt();
+         System.out.println(n1);
+         System.out.println(n2);
+     for (int i=3;i<=n;i++){
+         sum=n1+n2;
+         n1=n2;
+         n2=sum;
+         System.out.println(sum);
+     }*/
+
+
+
+ 
+         // 18]
+         //star pattern
+         /*for (int i=0;i<=5;i++){
+             for (int k=0;k<=i;k++){
+                 System.out.print(" ");
+             }
+             for (int j=5-i;j>=0;j--){
+                 System.out.print(j);
+             }
+             System.out.println();
+         }*/
+
+
+
+
+          // 19]
+         //binary to decimal
+         /*Scanner sc=new Scanner(System.in);
+         String bin=sc.next();
+         int decimal=Integer.parseInt(bin,2);
+         System.out.println(decimal);*/
+
+
+
+
+         // 20]
+         //binary to decimal
+         /*Scanner sc=new Scanner(System.in);
+         int n=sc.nextInt();
+         int i=0;
+         int t=n;
+         int d=0;
+         while (t>0) {
+             int rem=t%10;
+             t=t/10;
+             Math math = null;
+             d= (int) (d+rem*math.pow(2,i++));
+         }
+         System.out.println(d);*/
+
+  
+
+
+
+         // 21]
+         //decimal to binary
+         /*Scanner sc=new Scanner(System.in);
+         String b=" ";
+         int n=sc.nextInt();
+         int t=n;
+         int d=0;
+         while (t>0) {
+             int rem=t%2;
+             t=t/2;
+             b=rem+b;
+         }
+         System.out.println(b);*/
+
+
+
+
+                // 22]
+                // covert digit to string
+                /* Scanner sc=new Scanner(System.in);
+                 String inputString = sc.next();
+                 String result = convertDigitsToString(inputString);
+                 System.out.println("Original String: " + inputString);
+                 System.out.println("Converted String: " + result);
+             }
+             public static String convertDigitsToString(String input) {
+                 StringBuilder result = new StringBuilder();
+
+                 for (int i = 0; i < input.length(); i++) {
+                     char currentChar = input.charAt(i);
+
+                     if (Character.isDigit(currentChar)) {
+                         // Convert the digit character to its corresponding string representation
+                         switch (currentChar) {
+                             case '0':
+                                result.append("Zero");
+                                 break;
+                             case '1':
+                                 result.append("One");
+                                 break;
+                             case '2':
+                                 result.append("Two");
+                                 break;
+                             case '3':
+                                 result.append("Three");
+                                 break;
+                             case '4':
+                                 result.append("Four");
+                                 break;
+                             case '5':
+                                 result.append("Five");
+                                 break;
+                             case '6':
+                                 result.append("Six");
+                                 break;
+                             case '7':
+                                 result.append("Seven");
+                                 break;
+                             case '8':
+                                 result.append("Eight");
+                                 break;
+                             case '9':
+                                 result.append("Nine");
+                                 break;
+                             default:
+                                 break;
+                         }
+                     } else {
+                         result.append(currentChar); // Append non-digit characters as is
+                     }
+                 }
+                 return result.toString();*/
+
+
+
+
+        // 23]
+        // count the number of repeated characters
+        /*Scanner sc=new Scanner(System.in);
+        String hi=sc.nextLine();
+        char amama='a';
+        int count=0;
+        for (int i=0;i<hi.length();i++) {
+
+            if (hi.charAt(i) ==amama) {
+                count++;
+                System.out.println(hi.charAt(i));
+            }
+        }
+            System.out.println(count);
+         */
+
+
+
+
+         // 24]
+         //star pattern
+         /*for (int i=0;i<5;i++){
+             for (int j=5-i;j>=1;j--){
+                 System.out.print(j);
+             }
+             System.out.println();
+         }*/
+
+
+
+
+         // 25]
+         /*for (int i=1;i<=5;i++){
+             for (int j=1;j<=i;j++){
+                 System.out.print(j);
+             }
+             System.out.println();
+         }*/
+
+
+
+
+   
+         // 26]
+         /*int rows = 5;
+         int temp = 1;
+         System.out.println("## Printing the pattern ##");
+         for (int i = 1; i <= rows; i++) //i=3,j=1,1<=3
+         {
+             for (int j = 1; j <= i; j++)
+             {
+                 System.out.print(temp + " ");
+                 temp++;
+             }
+             System.out.println();
+         }*/
+
+
+
+    
+         // 27]
+         /*int arr[] = { 1,2,4,1,2,4,5,8,9,8,9 };
+         int n=arr.length;
+         for (int i=0;i<=n;i++) {
+             int j;
+             for (j = 0; j < n; j++)
+                 if (i != j && arr[i] == arr[j])
+                     break;
+             if (j == n) {
+                 System.out.println(arr[i]);
+             }
+         }*/
+
+
+
+
+
+          // 28]
+         // Maximum and minimum number in the given array
+         /*int[] arr={2,4,5,7,1,8,6};
+         int min=arr[0];
+         int max=arr[0];
+         for (int i=0;i<arr.length;i++) {
+             if (arr[i]<min){
+                 min=arr[i];
+             }
+             else if(arr[i]>max){
+                 max=arr[i];
+             }
+         }
+         System.out.println(max+" "+min);*/
+
+
+
+
+         // 29]
+         //positive or negative number
+         /*Scanner sc=new Scanner(System.in);
+         int n=sc.nextInt();
+             if(n>=0){
+                 System.out.println("positive number");
+             }else {
+                 System.out.println("negative number");
+             }*/
+
+
+
+
+         // 30]
+         //some of n natural numbers
+         /*Scanner sc=new Scanner(System.in);
+         int n=sc.nextInt();
+         int sum=0;
+         int i;
+         for (i=0;i<=n;i++){
+             sum=sum+i;
+         }
+         System.out.println(sum);*/
+
+
+  
+
+         // 31]
+         //greatest of three numbers
+         /*Scanner sc=new Scanner(System.in);
+         int a=sc.nextInt();
+         int b=sc.nextInt();
+         int c=sc.nextInt();
+         if(a>b && a>c){
+             System.out.println("gretest number is "+ a);
+         } else if (b>a && b>c) {
+             System.out.println("gretest number is"+ b);
+         } else {
+             System.out.println("gretest number is"+ c);
+         }*/
+
+
+
+
+         // 32]
+         //leap year or not
+         /*int year = 2020;
+         if (year % 400 == 0)
+             System.out.println (year + " is a Leap Year");
+
+         else if (year % 4 == 0 && year % 100 != 0)
+             System.out.println (year + " is a Leap Year");
+
+         else
+             System.out.println (year + " is not a Leap Year");*/
+
+
+
+      
+         // 33]
+         /*Scanner sc=new Scanner(System.in);
+         int n=sc.nextInt();
+         if(n%4==0){
+             System.out.println("leap year");
+         }else {
+             System.out.println("not a leap year");
+         }*/
+
+
+     
+      
+         // 34]
+         //prime number in the given range
+         /*Scanner sc=new Scanner(System.in);
+         int n=sc.nextInt();
+         int count=0;
+         int m=50;
+         if(n>m) {
+             System.out.println("enter number within the range");
+         }else{
+             if(n==0 || n==1){
+                 System.out.println("prime number");
+             } else {
+                 for (int i=2;i<=n;i++){
+                     if(n%i==0)
+                         count++;
+                 }
+             }
+             if(count==1){
+                 System.out.println("prime number");
+             } else {
+                 System.out.println("not a prime number");
+             }
+         }*/
+
+
+
+
+
+         // 35]
+         //sum of digits of a number
+         /*Scanner sc=new Scanner(System.in);
+         int n=sc.nextInt();
+         int sum=0;
+         int t=n;
+         while (t>0){
+             int rem=t%10;
+              sum=sum+rem;
+              t=t/10;
+         }
+         System.out.println(sum);*/
+
+
+  
+ 
+         // 36]
+         // charcter prints
+        /* for(char c='a';c<'d';c++){
+             System.out.println(c);
+         }*/
+
+
+
+
+         // 37]
+         /*for (int a=0, b=3;a<3 && b>0; a++,b--){
+             System.out.print(a+" "+b+" ");
+         }*/
+
+         /*int age=9;
+         switch (age) {
+             case 1:
+             case 2:
+             case 3:
+             case 4:
+             case 5:
+                 System.out.println("12345");
+                 break;
+             case 7:
+             case 8:
+             case 9:
+                 System.out.println("789");
+         }*/
+         
+         
+
+
+         // 38]
+         //poweer of a number
+         /*Scanner sc=new Scanner(System.in);
+         System.out.println("enter the number=n and power=m");
+         int n=sc.nextInt();
+         int m=sc.nextInt();
+         int result;
+
+         result= (int) Math.pow(n,m);
+         System.out.println(result);*/
+
+
+
+
+          // 39]
+         //factors of a number
+         /*Scanner sc=new Scanner(System.in);
+         int n=sc.nextInt();
+         for (int i=1;i<=n;i++){
+             for (int j=1;j<=n;j++){
+                 if(i*j==n) {
+                     System.out.println(i);
+                 }
+             }
+         }*/
+
+  
+
+
+         // 40]
+         //strong number or not
+         /*Scanner sc=new Scanner(System.in);
+         int n=sc.nextInt();
+         int sum=0;
+         int t=n;
+         while(t>0){
+             int rem=t%10;
+         }*/
+
+
+
+   
+
+         // 41]
+         //perfect number or not
+         /**Scanner sc=new Scanner(System.in);
+         int n=sc.nextInt();
+         int sum=0;
+         for (int i=1;i<n;i++){
+             for (int j=1;j<=n;j++){
+                 if(i*j==n){
+                     sum=sum+i;
+                 }
+             }
+         }
+         if(n==sum){
+             System.out.println("perfect number");
+         }
+         else {
+             System.out.println("not perfect");
+         }*/
+
+
+
+
+         // 42]
+         // Automorphic number or not
+         Scanner sc=new Scanner(System.in);
+         int n=sc.nextInt();
+         int m=n*n;
+         int t=m;
+         int rem=t%10;
+         if(rem==n){
+             System.out.println("Automorphic Number");
+         } else{
+             System.out.println("not Automorphic Number");
+         }
+
+
+
+
+     }
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
